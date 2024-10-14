@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="car">
+        <div class="card-header">
+            <h3>Vehiculos</h3>
+        </div>
+        <div class="card-body" class="text-center">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>MODELO</th>
+                        <th>COLOR</th>
+                        <th>STOCK</th>
+                        <th>PRECIO</th>
+                        <th>IDSUCURSAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let vehiculo of vehiculos ">
+                        <th>{{vehiculo.id}}</th>
+                        <th>{{vehiculo.modelo}}</th>
+                        <th>{{vehiculo.color}}</th>
+                        <th>{{vehiculo.stock}}</th>
+                        <th>{{vehiculo.precio}}</th>
+                        <th>{{vehiculo.idsucursal}}</th>
+                        <th>
+                            <button class="btn btn-warning">Editar</button>
+                            <button class="btn btn-danger">Eliminar</button>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
